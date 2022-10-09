@@ -1,3 +1,4 @@
+# Retrieves the road for a goal and stores it in a CSV file
 import datetime
 import argparse
 from beeminder import Beeminder
