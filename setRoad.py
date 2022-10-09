@@ -1,3 +1,4 @@
+# Reads the road for a goal from a CSV file and sends it to beeminder
 import datetime
 import argparse
 from beeminder import Beeminder

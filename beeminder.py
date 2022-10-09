@@ -7,6 +7,7 @@ import configparser
 class Beeminder:
     _base_url = 'https://www.beeminder.com/api/v1/'
 
+    # Can initialise either from .ini file or via parameters
     def __init__(self, user="", token="", ini_file=""):
         if len(ini_file)>0:
             config = configparser.ConfigParser()
