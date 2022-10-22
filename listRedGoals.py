@@ -1,4 +1,4 @@
-# Lists all the goals for your account, highlighting the red onesimport time,datetime
+# Lists all the goals for your account, highlighting the red ones
 from beeminder import Beeminder
 import datetime
 
