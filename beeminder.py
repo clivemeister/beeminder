@@ -33,7 +33,7 @@ class Beeminder:
 
     def create_datapoint(self, goalname, timestamp, value, comment=' ', sendmail='false'):
         values = {'auth_token':self.auth_token, 'timestamp':timestamp, 'value':value, 'comment':comment, 'sendmail':sendmail}
-        return self._call(f'users/{self.username}/goals/{goalname}/datapoints.json', data=values, method='POST')
+        return self._call(f'users/{self.username}/goals/{goalname.strip()}/datapoints.json', data=values, method='POST')
 
     def update_road(self, goalname, new_roadall):
         slug = {"roadall": new_roadall}

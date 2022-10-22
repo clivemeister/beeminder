@@ -1,6 +1,6 @@
-# Lists all the goals for your account, highlighting the red ones
-import time,datetime
+# Lists all the goals for your account, highlighting the red onesimport time,datetime
 from beeminder import Beeminder
+import datetime
 
 pyminder = Beeminder(ini_file="beeminder.ini")
 
